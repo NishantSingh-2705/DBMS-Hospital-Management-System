@@ -12,3 +12,14 @@ turn will have several doctors with different points of specializations, then
 under every doctor there will be some nurses to manage patients. There needs
 to be separate categorization of patients and which particular doctor they
 want to consult, and on which date.
+## Working Hierarchy
+* Hospital has several departments, all the departments in a particular
+hospital will be in the department entity.
+* Hospital has further relations with dispensary table which will keep
+record of all the medicines allocated for a particular department along
+with the disease name. Department table also shares a one to many
+relationship with doctor table.
+* Doctor entity consists of entities describing details about the doctors
+and the department which they belong to.
+* Then there are patient and patient history entities to store details about
+the patients and their medical
